@@ -126,7 +126,7 @@ void CMeter::draw(QPainter &painter)
     painter.setFont(m_font);
 
     painter.setPen(QColor(0xDA, 0xDA, 0xDA, 0xFF));
-    painter.drawText(marg, height() - 2, QString::number((double)m_dBFS, 'f', 1) + " dBFS" );
+    painter.drawText(marg, height() - 2, QString::number((double)m_dBFS, 'f', 4) + " dBFS" );
 }
 
 // Called to draw an overlay bitmap containing items that
