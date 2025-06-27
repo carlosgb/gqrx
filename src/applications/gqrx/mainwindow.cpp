@@ -84,11 +84,11 @@ MainWindow::MainWindow(const QString& cfgfile, bool edit_conf, QWidget *parent) 
     if (xdg_dir.isEmpty())
     {
         // Qt takes care of conversion to native separators
-        m_cfg_dir = QString("%1/.config/gqrx_brf1").arg(QDir::homePath());
+        m_cfg_dir = QString("%1/.config/gqrx_bladerf1").arg(QDir::homePath());
     }
     else
     {
-        m_cfg_dir = QString("%1/gqrx_brf1").arg(xdg_dir.data());
+        m_cfg_dir = QString("%1/gqrx_bladerf1").arg(xdg_dir.data());
     }
 
     setWindowTitle(QString("Gqrx_bladeRF1 %1").arg(VERSION));

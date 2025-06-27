@@ -191,9 +191,9 @@ static void reset_conf(const QString &file_name)
     QByteArray  xdg_dir = qgetenv("XDG_CONFIG_HOME");
 
     if (xdg_dir.isEmpty())
-        cfg_file = QString("%1/.config/gqrx_brf1/%2").arg(QDir::homePath()).arg(file_name);
+        cfg_file = QString("%1/.config/gqrx_bladerf1/%2").arg(QDir::homePath()).arg(file_name);
     else
-        cfg_file = QString("%1/gqrx_brf1/%2").arg(xdg_dir.data()).arg(file_name);
+        cfg_file = QString("%1/gqrx_bladerf1/%2").arg(xdg_dir.data()).arg(file_name);
 
     if (QFile::exists(cfg_file))
     {
@@ -215,9 +215,9 @@ static void list_conf()
     QByteArray  xdg_dir = qgetenv("XDG_CONFIG_HOME");
 
     if (xdg_dir.isEmpty())
-        conf_path = QString("%1/.config/gqrx_brf1/").arg(QDir::homePath());
+        conf_path = QString("%1/.config/gqrx_bladerf1/").arg(QDir::homePath());
     else
-        conf_path = QString("%1/gqrx_brf1/").arg(xdg_dir.data());
+        conf_path = QString("%1/gqrx_bladerf1/").arg(xdg_dir.data());
 
     QDir conf_dir = QDir(conf_path, "*.conf", QDir::Name, QDir::Files);
     QStringList conf_files = conf_dir.entryList(QStringList("*.conf"));
