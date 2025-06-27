@@ -28,7 +28,7 @@
 #include "remote_control.h"
 #include "qtgui/dockrxopt.h"
 
-#define DEFAULT_RC_PORT            2444
+#define DEFAULT_RC_PORT            5710
 #define DEFAULT_RC_ALLOWED_HOSTS   "127.0.0.1"
 
 RemoteControl::RemoteControl(QObject *parent) :
